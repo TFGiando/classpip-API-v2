@@ -1,0 +1,69 @@
+{
+  "Profesores": [
+    {
+      "id": "1",
+      "name": "Carlos",
+      "apellidos": "Martinez",
+      "email": "carlos@upc.edu",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "Pedro",
+      "apellidos": "Gomez",
+      "email": "pedro@upc.edu",
+      "password": "123456"
+    },
+    {
+      "name": "Perpe",
+      "apellidos": "Martinez",
+      "email": "pepe@upc.edu",
+      "password": "123456",
+      "id": "15172e2a-8b6e-4f34-b84f-9c1ec4889558"
+    },
+    {
+      "Nombre": "prueba",
+      "PrimerApellido": "prueba",
+      "SegundoApellido": "prueba",
+      "NombreUsuario": "pruebita",
+      "email": "pruebita@upc.edu",
+      "Password": "12345",
+      "Identificador": "11832",
+      "id": "7788986e-f238-4166-9b44-1973e2adadb7"
+    }
+  ],
+  "JuegoCuestionarioRapido": [
+    {
+      "NombreJuego": "Un rapidin",
+      "Tipo": "Juego De Cuestionario Rápido",
+      "Modalidad": "Kahoot",
+      "PuntuacionCorrecta": 0,
+      "PuntuacionIncorrecta": 0,
+      "TiempoLimite": 20,
+      "Presentacion": "Mostrar pregunta",
+      "JuegoActivo": false,
+      "JuegoTerminado": false,
+      "Clave": "71619052",
+      "Respuestas": [],
+      "profesorId": 16,
+      "cuestionarioId": 59,
+      "id": 54
+    },
+    {
+      "NombreJuego": "Prueba V2",
+      "Tipo": "Juego De Cuestionario Rápido",
+      "Modalidad": "Kahoot",
+      "PuntuacionCorrecta": 0,
+      "PuntuacionIncorrecta": 0,
+      "TiempoLimite": "6",
+      "Presentacion": "Mostrar pregunta",
+      "JuegoActivo": false,
+      "JuegoTerminado": false,
+      "Clave": "49004290",
+      "Respuestas": [],
+      "profesorId": 16,
+      "cuestionarioId": 59,
+      "id": "d81a4211-d496-4f90-8cda-4f6d7ba1f285"
+    }
+  ]
+}
