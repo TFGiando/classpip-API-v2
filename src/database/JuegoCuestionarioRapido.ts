@@ -1,3 +1,4 @@
+import { JuegoCuestionarioRapido } from './../interfaces/juegoCuestionarioRapidoInterface';
 const DB = require("./db.json");
 import * as utils from "../utils/utilsDatabase";
 
@@ -26,7 +27,7 @@ const getCuestionarioRapidoPorId = (id: string) => {
 const getCuestionarioRapidoPorIdProfesor = (idProfesor: number) => {
     
     try {
-        const cuestionarioRapido = DB.JuegoCuestionarioRapido.filter((juegoCuestionarioRapido: any) => juegoCuestionarioRapido.profesorId === idProfesor);
+        const cuestionarioRapido = DB.JuegoCuestionarioRapido.filter((juegoCuestionarioRapido: JuegoCuestionarioRapido) => juegoCuestionarioRapido.profesorId === idProfesor);
         if (!cuestionarioRapido) {
             throw {
                 status: 400,
@@ -39,12 +40,7 @@ const getCuestionarioRapidoPorIdProfesor = (idProfesor: number) => {
     }
 }
 
-const createJuegoCuestionarioRapido = (newJuegoRapido: any) => {
-    // const isAlreadyAdded = DB.JuegoCuestionarioRapido.findIndex((juegoCuestionarioRapido: any) => juegoCuestionarioRapido.NombreJuego === newJuegoRapido.NombreJuego) > -1;
-    // if (isAlreadyAdded) {
-    //     return; //Crear respectivo try - catch
-    // }
-
+const createJuegoCuestionarioRapido = (newJuegoRapido: JuegoCuestionarioRapido) => {
     try {
         DB.JuegoCuestionarioRapido.push(newJuegoRapido);
         utils.saveToDatabase(DB);
@@ -57,7 +53,7 @@ const createJuegoCuestionarioRapido = (newJuegoRapido: any) => {
 
 const deleteCuestionarioRapidoPorId = (id: string) => {
     try {
-        const indexParaEliminar = DB.JuegoCuestionarioRapido.findIndex((juegoCuestionarioRapido: any) => juegoCuestionarioRapido.id === id);
+        const indexParaEliminar = DB.JuegoCuestionarioRapido.findIndex((juegoCuestionarioRapido: JuegoCuestionarioRapido) => juegoCuestionarioRapido.id === id);
         if (indexParaEliminar === -1) {
             throw {
                 status: 400,
@@ -76,9 +72,9 @@ const deleteCuestionarioRapidoPorId = (id: string) => {
    
 }
 
-const updateJuegoCuestionarioRapido = (changesJuegoCuestionarioRapiodo: any, id: string) => {
+const updateJuegoCuestionarioRapido = (changesJuegoCuestionarioRapiodo: JuegoCuestionarioRapido, id?: string) => {
     try {
-        const indexParaActualizar = DB.JuegoCuestionarioRapido.findIndex((juegoCuestionarioRapido: any) => juegoCuestionarioRapido.id === id);
+        const indexParaActualizar = DB.JuegoCuestionarioRapido.findIndex((juegoCuestionarioRapido: JuegoCuestionarioRapido) => juegoCuestionarioRapido.id === id);
         if (indexParaActualizar === -1) {
             throw {
                 status: 400,

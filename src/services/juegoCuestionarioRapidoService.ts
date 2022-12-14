@@ -1,5 +1,6 @@
 import * as juegoCuestionarioRapido from "../database/JuegoCuestionarioRapido"
-import {v4 as uuidv4} from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
+import { JuegoCuestionarioRapido } from "../interfaces/juegoCuestionarioRapidoInterface";
 
 const getAllJuegoCuestionarioRapido = () => {
     const allJuegosCuestionarioRapido = juegoCuestionarioRapido.getAllJuegoCuestionarioRapido();
@@ -13,7 +14,7 @@ const getJuegoCuestionarioRapidoPorId = (id: string) => {
     } catch (error) {
         throw error;
     }
-    
+
 }
 
 const getJuegoCuestionarioRapidoPorIdProfesor = (idProfesor: number) => {
@@ -25,61 +26,41 @@ const getJuegoCuestionarioRapidoPorIdProfesor = (idProfesor: number) => {
     }
 }
 
-const createJuegoCuestionarioRapido = (body: any) => {
+const createJuegoCuestionarioRapido = (newJuegoCuestionarioRapido: JuegoCuestionarioRapido) => {
 
-    if(!body.NombreJuego || 
-        !body.Tipo ||
-        !body.Modalidad ||
-        !body.Clave || 
-        !body.profesorId || 
-        !body.cuestionarioId ) {
-        
+    if (!newJuegoCuestionarioRapido.NombreJuego ||
+        !newJuegoCuestionarioRapido.Tipo ||
+        !newJuegoCuestionarioRapido.Modalidad ||
+        !newJuegoCuestionarioRapido.Clave ||
+        !newJuegoCuestionarioRapido.profesorId ||
+        !newJuegoCuestionarioRapido.cuestionarioId) {
         throw {
             status: 400,
             message: `Uno o mas parametros del juegoCuestionarioRapido faltan {NombreJuego, Tipo..} `
         }
-        
-     }
-   
-    const newJuegoCuestionarioRapido = {
-        NombreJuego : body.NombreJuego,
-        Tipo: body.Tipo,
-        Modalidad: body.Modalidad,
-        PuntuacionCorrecta: body.PuntuacionCorrecta,
-        PuntuacionIncorrecta: body.PuntuacionIncorrecta,
-        TiempoLimite: body.TiempoLimite,
-        Presentacion: body.Presentacion,
-        JuegoActivo: body.JuegoActivo,
-        JuegoTerminado: body.JuegoTerminado,
-        Clave: body.Clave,
-        Respuestas: body.Respuestas,
-        profesorId: body.profesorId,
-        cuestionarioId: body.cuestionarioId,
     }
-    const juegoCuestionarioRapidoToInsert = {
-        ...newJuegoCuestionarioRapido,
-        id: uuidv4(), //Verificar si es la mejor opcion
-    };
+
+    newJuegoCuestionarioRapido.id = uuidv4();
 
     try {
-        const createdProfesor = juegoCuestionarioRapido.createJuegoCuestionarioRapido(juegoCuestionarioRapidoToInsert);
-        return createdProfesor;
-    } catch(error) {
+        const createdJuegoCuestionarioRapido = juegoCuestionarioRapido.createJuegoCuestionarioRapido(newJuegoCuestionarioRapido);
+        return createdJuegoCuestionarioRapido;
+    } catch (error) {
         throw error;
     }
-    
+
 }
 
 const deleteJuegoCuestionarioRapidoPorId = (id: string) => {
     try {
-        const juegoCuestionario = juegoCuestionarioRapido.deleteCuestionarioRapidoPorId(id);
-        return juegoCuestionario;
+        const deleteJuegoCuestionario = juegoCuestionarioRapido.deleteCuestionarioRapidoPorId(id);
+        return deleteJuegoCuestionario;
     } catch (error) {
         throw error;
     }
 }
 
-const updateJuegoCuestionarioRapido = (updateJuegoCuestionario: any) => {
+const updateJuegoCuestionarioRapido = (updateJuegoCuestionario: JuegoCuestionarioRapido) => {
     try {
         const juegoCuestionario = juegoCuestionarioRapido.updateJuegoCuestionarioRapido(updateJuegoCuestionario, updateJuegoCuestionario.id);//CAMBIAR
         return juegoCuestionario;
@@ -91,7 +72,8 @@ const updateJuegoCuestionarioRapido = (updateJuegoCuestionario: any) => {
 export {
     getAllJuegoCuestionarioRapido,
     createJuegoCuestionarioRapido,
-    getJuegoCuestionarioRapidoPorId, 
-    getJuegoCuestionarioRapidoPorIdProfesor, 
-    deleteJuegoCuestionarioRapidoPorId, 
-    updateJuegoCuestionarioRapido};
+    getJuegoCuestionarioRapidoPorId,
+    getJuegoCuestionarioRapidoPorIdProfesor,
+    deleteJuegoCuestionarioRapidoPorId,
+    updateJuegoCuestionarioRapido
+};
