@@ -3,7 +3,7 @@ import * as juegoCogerTurnoRapidoService from "../services/juegoCogerTurnoRapido
 import { handleHttp } from "../utils/http.handle";
 
 
-const getAllJuegoCuestionarioRapido = (req: Request, res: Response) => {
+const getAllJuegoCogerTurnoRapido = (req: Request, res: Response) => {
 try{
     const allJuegoCogerTurnoRapido = juegoCogerTurnoRapidoService.getAllJuegoCogerTurnoRapido();
     res.send({status: "OK", data: allJuegoCogerTurnoRapido});
@@ -30,6 +30,12 @@ const getJuegoCogerTurnoRapidoPorProfesor = ({params}: Request, res:Response) =>
     const {idProfesor} = params;
     if(!idProfesor) {
         handleHttp(res, "Falta parametro :idProfesor", 400);
+    }
+    try {
+        const juegoCogerTurnoRapido = juegoCogerTurnoRapidoService.getJuegoCogerTurnoRapidoPorIdProfesor(+idProfesor);
+        res.send(juegoCogerTurnoRapido);
+    } catch (error: any) {
+        handleHttp(res, error?.message ||"ERROR_GET_JUEGO_COGER_TURNO_RAPIDP_POR_PROFESOR", error?.status || 500, error);
     }
 }
 
@@ -72,4 +78,4 @@ const deleteJuegoCogerTurnoRapido = ({params}: Request, res: Response) => {
 
 }
 
-export {getAllJuegoCuestionarioRapido, getJuegoCogerTurnoRapidoPorId, getJuegoCogerTurnoRapidoPorProfesor, createJuegoCogerTurnoRapido, deleteJuegoCogerTurnoRapido, updateJuegoCogerTurnoRapido}
+export {getAllJuegoCogerTurnoRapido, getJuegoCogerTurnoRapidoPorId, getJuegoCogerTurnoRapidoPorProfesor, createJuegoCogerTurnoRapido, deleteJuegoCogerTurnoRapido, updateJuegoCogerTurnoRapido}
