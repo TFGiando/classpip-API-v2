@@ -65,5 +65,89 @@
       "cuestionarioId": 59,
       "id": "d81a4211-d496-4f90-8cda-4f6d7ba1f285"
     }
+  ],
+  "JuegoEncuestaRapida": [
+    {
+      "id": 81,
+      "NombreJuego": "encuesta de satisfaccion",
+      "Tipo": "Juego De Encuesta Rápida",
+      "Clave": "57155883",
+      "Respuestas": [
+        {
+          "Contestado": false,
+          "alumnoId": 0,
+          "juegoDeCuestionarioSatisfaccionId": 81,
+          "RespuestasAfirmaciones": [
+            5
+          ],
+          "RespuestasPreguntasAbiertas": [
+            "ver como funciona classpip",
+            "algo de codigo que dejaremos perfecto"
+          ]
+        },
+        {
+          "Contestado": false,
+          "alumnoId": 0,
+          "juegoDeCuestionarioSatisfaccionId": 81,
+          "RespuestasAfirmaciones": [
+            5
+          ],
+          "RespuestasPreguntasAbiertas": [
+            "todo",
+            "nada"
+          ]
+        },
+        {
+          "Contestado": false,
+          "alumnoId": 0,
+          "juegoDeCuestionarioSatisfaccionId": 81,
+          "RespuestasAfirmaciones": [
+            3
+          ],
+          "RespuestasPreguntasAbiertas": [
+            "sasas",
+            "dssdds"
+          ]
+        },
+        {
+          "Contestado": false,
+          "alumnoId": 0,
+          "juegoDeCuestionarioSatisfaccionId": 81,
+          "RespuestasAfirmaciones": [
+            5
+          ],
+          "RespuestasPreguntasAbiertas": [
+            "Todo",
+            "Nada"
+          ]
+        },
+        {
+          "Contestado": false,
+          "alumnoId": 0,
+          "juegoDeCuestionarioSatisfaccionId": 81,
+          "RespuestasAfirmaciones": [
+            5
+          ],
+          "RespuestasPreguntasAbiertas": [
+            "La información obtenida ",
+            "Algunos fallos del juego"
+          ]
+        },
+        {
+          "Contestado": false,
+          "alumnoId": 0,
+          "juegoDeCuestionarioSatisfaccionId": 81,
+          "RespuestasAfirmaciones": [
+            5
+          ],
+          "RespuestasPreguntasAbiertas": [
+            "buena explicación ",
+            "cuando hago yo las cosas lo veréis "
+          ]
+        }
+      ],
+      "profesorId": 8,
+      "cuestionarioSatisfaccionId": 33
+    }
   ]
 }
