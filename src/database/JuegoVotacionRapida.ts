@@ -25,11 +25,31 @@ const getVotacionRapidaPorId = (id: string) =>{
 const getVotacionRapidaPorIdProfesor = (idProfesor: number) => {
     
     try {
-        const votacionRapida = DB.juegoVotacionRapida.filter((juegoVotacionRapida: JuegoVotacionRapida) => juegoVotacionRapida.profesorId === idProfesor);
+        const votacionRapida = DB.JuegoVotacionRapida.filter((juegoVotacionRapida: JuegoVotacionRapida) => juegoVotacionRapida.profesorId === idProfesor);
         if (!votacionRapida) {
             throw {
                 status: 400,
-                message: `No se puede encontrar el juegoCuestionarioRapido con idProfesor ${idProfesor} `
+                message: `No se puede encontrar el juegoVotacionRapida con idProfesor ${idProfesor} `
+            }
+        }
+        return votacionRapida;
+    } catch (error: any){
+        throw {status: error?.status || 500, message: error?.message || error  };
+    }
+}
+
+const getVotacionRapidaPorClave = (Clave: string) => {
+    
+    try {
+        console.log("Clave en String")
+        console.log(Clave)
+        console.log(DB.juegoVotacionRapida)
+        const votacionRapida = DB.JuegoVotacionRapida.filter((juegoVotacionRapida: JuegoVotacionRapida) => 
+         juegoVotacionRapida.Clave === Clave);
+        if (!votacionRapida) {
+            throw {
+                status: 400,
+                message: `No se puede encontrar el juegoVotacionRapida con la clave ${Clave} `
             }
         }
         return votacionRapida;
@@ -92,4 +112,4 @@ const updateJuegoVotacionRapida = (changesJuegoVotacionRapida: JuegoVotacionRapi
 
 }
 
-export{getAllVotacionRapida, createJuegoVotacionRapida, getVotacionRapidaPorId, getVotacionRapidaPorIdProfesor, deleteJuegoVotacionRapidaPorId, updateJuegoVotacionRapida}
+export{getAllVotacionRapida, createJuegoVotacionRapida, getVotacionRapidaPorId, getVotacionRapidaPorIdProfesor, getVotacionRapidaPorClave, deleteJuegoVotacionRapidaPorId, updateJuegoVotacionRapida}

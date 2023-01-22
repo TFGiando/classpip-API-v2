@@ -65,5 +65,36 @@
       "cuestionarioId": 59,
       "id": "d81a4211-d496-4f90-8cda-4f6d7ba1f285"
     }
+  ],
+  "JuegoVotacionRapida": [
+    {
+      "NombreJuego": "coger turno",
+      "Tipo": "Juego De Votación Rápida",
+      "ModoReparto": "Reparto fijo según posición",
+      "profesorId": 14,
+      "Clave": "47658880",
+      "Conceptos": [
+        "hola buenas "
+      ],
+      "Puntos": [
+        23
+      ],
+      "Respuestas": [
+        {
+          "nick": "fsdfsdfs",
+          "votos": [
+            {
+              "c": "hola buenas ",
+              "puntos": 23
+            }
+          ]
+        }
+      ],
+      "id": "ba8cdb54-7d4a-4be0-af26-519ae6648fc4",
+      "modoReparto": "Reparto fijo según posición",
+      "punto": [
+        23
+      ]
+    }
   ]
 }

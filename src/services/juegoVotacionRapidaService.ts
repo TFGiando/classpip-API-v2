@@ -25,6 +25,15 @@ const getJuegoVotacionRapidaPorIdProfesor = (idProfesor: number) => {
     }
 }
 
+const getJuegoVotacionRapidaPorClave = (Clave: number) => {
+    try {
+        const juegoVotacion = juegoVotacionRapida.getVotacionRapidaPorClave(Clave.toString());
+        return juegoVotacion;
+    } catch (error) {
+        throw error;
+    }
+}
+
 const createJuegoVotacionRapida = (newJuegoVotacionRapida: JuegoVotacionRapida) => {
 
     if (!newJuegoVotacionRapida.NombreJuego ||
@@ -74,5 +83,6 @@ export {
     getJuegoVotacionRapidaPorId,
     getJuegoVotacionRapidaPorIdProfesor,
     deleteJuegoVotacionRapidaPorId,
-    updateJuegoVotacionRapida
+    updateJuegoVotacionRapida,
+    getJuegoVotacionRapidaPorClave
 };

@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { request, Request, Response } from "express";
 import * as juegoVotacionRapidaService from "../services/juegoVotacionRapidaService";
 import { handleHttp } from "../utils/http.handle";
 
@@ -39,6 +39,23 @@ const getJuegoVotacionRapidaPorProfesor = ({params}: Request, res: Response) => 
     }    
 }
 
+const getJuegoVotacionRapidaPorClave = ({params}: Request, res: Response) => {
+    const {Clave} = params;
+    console.log('clave')
+    console.log(Clave)
+    Clave.split
+    if(!Clave) {
+        handleHttp(res, "Falta parametro clave", 400)
+    }
+    try {
+
+        const juegoVotacionRapida = juegoVotacionRapidaService.getJuegoVotacionRapidaPorClave(+Clave);
+        res.send(juegoVotacionRapida)
+    } catch (error:any) {
+        handleHttp(res, error?.message || "ERROR_GET_JUEGO_VOTACION_RAPIDPO_POR_CLAVE", error?.status || 500, error);
+    }
+}
+
 const createJuegoVotacionRapida= (req: Request, res: Response) => {
     const { body } = req;  
     try {
@@ -77,4 +94,4 @@ const deleteJuegoVotacionRapida = ({params}: Request, res: Response) => {
     }  
 }
 
-export{ getAllJuegoVotacionRapida, getJuegoVotacionRapidaPorProfesor, getVotacionRapidaPorId, createJuegoVotacionRapida, updateJuegoVotacionRapida, deleteJuegoVotacionRapida}
+export{ getAllJuegoVotacionRapida, getJuegoVotacionRapidaPorProfesor, getVotacionRapidaPorId, getJuegoVotacionRapidaPorClave, createJuegoVotacionRapida, updateJuegoVotacionRapida, deleteJuegoVotacionRapida}
