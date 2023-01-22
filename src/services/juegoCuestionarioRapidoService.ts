@@ -1,6 +1,6 @@
 import * as juegoCuestionarioRapido from "../database/JuegoCuestionarioRapido"
 import { v4 as uuidv4 } from 'uuid';
-import { JuegoCuestionarioRapido } from "../interfaces/juegoCuestionarioRapidoInterface";
+import { JuegoCuestionarioRapido } from "../interfaces/juegosRapidos/juegoCuestionarioRapidoInterface";
 
 const getAllJuegoCuestionarioRapido = () => {
     const allJuegosCuestionarioRapido = juegoCuestionarioRapido.getAllJuegoCuestionarioRapido();

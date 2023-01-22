@@ -65,5 +65,295 @@
       "cuestionarioId": 59,
       "id": "d81a4211-d496-4f90-8cda-4f6d7ba1f285"
     }
+  ],
+  "JuegoCogerTurnoRapido": [
+    {
+      "NombreJuego": "prueba",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "65236438",
+      "Presentacion": "fsdfdsf",
+      "Turnos": [
+        {
+          "dia": "2023-01-13",
+          "hora": "23:39"
+        }
+      ],
+      "id": "47776751-d861-4981-87b0-b9183aeb876c"
+    },
+    {
+      "NombreJuego": "prueba",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "59006156",
+      "Presentacion": "fsdfdsf",
+      "Turnos": [
+        {
+          "dia": "2023-01-13",
+          "hora": "23:39"
+        }
+      ],
+      "id": "b6816f77-2e27-44b7-8b15-b95c2095a033"
+    },
+    {
+      "NombreJuego": "prueba",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "93915602",
+      "Presentacion": "fsdfdsf",
+      "Turnos": [
+        {
+          "dia": "2023-01-13",
+          "hora": "23:39"
+        }
+      ],
+      "id": "5ff92a67-9558-4510-bcaa-d401cf149772"
+    },
+    {
+      "NombreJuego": "prueba2",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "39377314",
+      "Presentacion": "presentacion2",
+      "Turnos": [
+        {
+          "dia": "2023-01-14",
+          "hora": "13:06"
+        },
+        {
+          "dia": "2023-01-22",
+          "hora": "10:07"
+        }
+      ],
+      "id": "0076a259-317c-4e00-b0fb-3254db32d446"
+    },
+    {
+      "NombreJuego": "prueba2",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "72260385",
+      "Presentacion": "presentacion2",
+      "Turnos": [
+        {
+          "dia": "2023-01-14",
+          "hora": "13:06"
+        },
+        {
+          "dia": "2023-01-22",
+          "hora": "10:07"
+        }
+      ],
+      "id": "7e080785-f576-4d94-b4e2-675025e54c29"
+    },
+    {
+      "NombreJuego": "fsdf",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "13289207",
+      "Presentacion": "presentacion 1",
+      "Turnos": [
+        {
+          "dia": "2023-01-22",
+          "hora": "13:13"
+        }
+      ],
+      "id": "de4ce58a-522d-46c2-9aaf-c88e01ef4b44"
+    },
+    {
+      "NombreJuego": "fsdfs",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "85943036",
+      "Presentacion": "ffsdfs",
+      "Turnos": [
+        {
+          "dia": "2023-01-27",
+          "hora": "10:08"
+        }
+      ],
+      "id": "94a73728-a2f7-407a-854f-51f070037684"
+    },
+    {
+      "NombreJuego": "fsdfs",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "34461867",
+      "Presentacion": "fsdfsdfdf",
+      "Turnos": [
+        {
+          "dia": "2023-01-31",
+          "hora": "13:25"
+        }
+      ],
+      "id": "42626250-e89e-475d-bdb8-ab95ea7c7e64"
+    },
+    {
+      "NombreJuego": "fsdfsf",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "29298922",
+      "Presentacion": "fsdfdsfsdf",
+      "Turnos": [
+        {
+          "dia": "2023-01-22",
+          "hora": "12:35"
+        }
+      ],
+      "id": "3742f6a4-79dd-4437-b9ca-d2e05bd0df5d"
+    },
+    {
+      "NombreJuego": "fsdfdsfds",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "17208471",
+      "Presentacion": "fsfsdf",
+      "Turnos": [
+        {
+          "dia": "2023-01-07",
+          "hora": "10:35"
+        }
+      ],
+      "id": "f94a5d27-f7e2-4937-9f7e-540650964a20"
+    },
+    {
+      "NombreJuego": "czzcx",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "24095664",
+      "Presentacion": "dasdasda",
+      "Turnos": [
+        {
+          "dia": "2023-02-02",
+          "hora": "14:40"
+        }
+      ],
+      "id": "ed7378af-f424-42ff-9b06-49009157bac4"
+    },
+    {
+      "NombreJuego": "czzcx",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "98791664",
+      "Presentacion": "dasdasda",
+      "Turnos": [
+        {
+          "dia": "2023-02-02",
+          "hora": "14:40"
+        }
+      ],
+      "id": "291b2dc1-da0a-479c-813f-a06b7dc9676f"
+    },
+    {
+      "NombreJuego": "dfsdfsdf",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "08744976",
+      "Presentacion": "fsdfsfds",
+      "Turnos": [
+        {
+          "dia": "2023-01-14",
+          "hora": "13:50"
+        }
+      ],
+      "id": "8f2b87a3-d70c-4376-b338-edf0986cb2da"
+    },
+    {
+      "NombreJuego": "safasfda",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "91932512",
+      "Presentacion": "fsfsdfsd",
+      "Turnos": [
+        {
+          "dia": "2023-01-28",
+          "hora": "16:12"
+        }
+      ],
+      "id": "e96e43af-f5f4-414d-8a08-9746d2ce8e03"
+    },
+    {
+      "NombreJuego": "fsdfa",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "84583402",
+      "Presentacion": "fsdfdsfs",
+      "Turnos": [
+        {
+          "dia": "2023-01-22",
+          "hora": "14:13"
+        }
+      ],
+      "id": "d0db119c-ca53-4ccf-b134-d09e7c7f4ffc"
+    },
+    {
+      "NombreJuego": "fsfsdfs",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "08488266",
+      "Presentacion": "fsdfsdf",
+      "Turnos": [
+        {
+          "dia": "2023-01-13",
+          "hora": "14:22"
+        }
+      ],
+      "id": "6bb5c5ea-28fe-4414-bdab-fc28b2993e0a"
+    },
+    {
+      "NombreJuego": "fsfsdfs",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "12157719",
+      "Presentacion": "fsdfsdf",
+      "Turnos": [
+        {
+          "dia": "2023-01-13",
+          "hora": "14:22"
+        }
+      ],
+      "id": "ff42559a-38a4-4a94-b625-64ae89c7f601"
+    },
+    {
+      "NombreJuego": "fsdfsdfsd",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "90447928",
+      "Presentacion": "fsdfdsfsdfds",
+      "Turnos": [
+        {
+          "dia": "2023-01-22",
+          "hora": "13:23"
+        }
+      ],
+      "id": "87be480f-05bd-4170-803a-ea9bed938553"
+    },
+    {
+      "NombreJuego": "fsdgdfg",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 1,
+      "Clave": "68970796",
+      "Presentacion": "fsdfsdfsf",
+      "Turnos": [
+        {
+          "dia": "2023-02-22",
+          "hora": "14:30"
+        }
+      ],
+      "id": "3e00f942-2e0c-4a38-9a69-591a25228bfe"
+    },
+    {
+      "NombreJuego": "sfdfsfdsfsd",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 14,
+      "Clave": "24563850",
+      "Presentacion": "fsdfsdfsdfs",
+      "Turnos": [
+        {
+          "dia": "2023-01-21",
+          "hora": "14:44"
+        }
+      ],
+      "id": "9870a063-b4b6-4814-8cc4-fa4f63cacca7"
+    }
   ]
 }

@@ -1,6 +1,6 @@
 import * as juegoCogerTurnoRapido from "../database/JuegoCogerTurnoRapido"
 import { v4 as uuidv4 } from 'uuid';
-import { JuegoCogerTurnoRapido } from "../interfaces/juegoDeCogerTurnoRapidoInterface";
+import { JuegoCogerTurnoRapido } from "../interfaces/juegosRapidos/juegoDeCogerTurnoRapidoInterface";
 
 const getAllJuegoCogerTurnoRapido = () => {
     const allJuegoCogerTurnoRapido = juegoCogerTurnoRapido.getAllCogerTurnoRapido();
@@ -26,20 +26,21 @@ const getJuegoCogerTurnoRapidoPorIdProfesor = (idProfesor: number) => {
 }
 
 const createJuegoCogerTurnoRapido = (newJuegoCogerTurnoRapido: JuegoCogerTurnoRapido) => {
-    if(!newJuegoCogerTurnoRapido.NombreJuego||
+    
+   if(!newJuegoCogerTurnoRapido.NombreJuego||
         !newJuegoCogerTurnoRapido.Tipo ||
-        !newJuegoCogerTurnoRapido.Clave ||
+      !newJuegoCogerTurnoRapido.Clave ||
         !newJuegoCogerTurnoRapido.profesorId ||
-        !newJuegoCogerTurnoRapido.Turnos ||
+      !newJuegoCogerTurnoRapido.Turnos ||
         ! newJuegoCogerTurnoRapido.Presentacion
 
-    )
-    {
+   )
+     {
         throw{
-            status: 400,
-            message: `Uno o mas parametros del juegoCogerTurnoRapido faltan {NombreJuego, Tipo..} `
+             status: 400,
+             message: `Uno o mas parametros del juegoCogerTurnoRapido faltan {NombreJuego, Tipo..} `
         }
-    }
+     }
 
     newJuegoCogerTurnoRapido.id= uuidv4();
 

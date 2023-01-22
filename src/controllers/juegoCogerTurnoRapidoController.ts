@@ -1,6 +1,7 @@
 import { request, Request, Response } from "express";
 import * as juegoCogerTurnoRapidoService from "../services/juegoCogerTurnoRapidoService";
 import { handleHttp } from "../utils/http.handle";
+import {body , validationResult } from 'express-validator';
 
 
 const getAllJuegoCogerTurnoRapido = (req: Request, res: Response) => {
@@ -40,10 +41,15 @@ const getJuegoCogerTurnoRapidoPorProfesor = ({params}: Request, res:Response) =>
 }
 
 const createJuegoCogerTurnoRapido = (req: Request, res: Response) => {
+    
     const {body} = req;
+    
     try{
+        console.log("dentro del controller")
+
         const createdJuegoCogerTurnoRapido = juegoCogerTurnoRapidoService.createJuegoCogerTurnoRapido(body);
         res.status(201).send(createdJuegoCogerTurnoRapido)
+        console.log(res)
     } catch (error:any) {
         handleHttp(res, error?.message || "ERROR_CREATE_JUEGO_COGER_TURNO_RAPIDO", error?.status || 500, error);
     }
