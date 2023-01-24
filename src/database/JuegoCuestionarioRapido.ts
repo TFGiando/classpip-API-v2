@@ -24,6 +24,23 @@ const getCuestionarioRapidoPorId = (id: string) => {
  
 }
 
+const getCuestionarioRapidoPorClave = (clave: string) => {
+
+    try {
+        const cuestionarioRapido = DB.JuegoCuestionarioRapido.find((juegoCuestionarioRapido: JuegoCuestionarioRapido) => juegoCuestionarioRapido.Clave === clave);
+        if (!cuestionarioRapido) {
+            throw {
+                status: 400,
+                message: `No se puede encontrar el juegoCuestionarioRapido con clave ${clave} `
+            }
+        }
+        return cuestionarioRapido;
+    } catch (error: any) {
+        throw {status: error?.status || 500, message: error?.message || error  };
+    }
+ 
+}
+
 const getCuestionarioRapidoPorIdProfesor = (idProfesor: number) => {
     
     try {
@@ -96,4 +113,4 @@ const updateJuegoCuestionarioRapido = (changesJuegoCuestionarioRapiodo: JuegoCue
 
 }
 
-export { getAllJuegoCuestionarioRapido, createJuegoCuestionarioRapido, getCuestionarioRapidoPorId, getCuestionarioRapidoPorIdProfesor, deleteCuestionarioRapidoPorId, updateJuegoCuestionarioRapido }
+export { getAllJuegoCuestionarioRapido, createJuegoCuestionarioRapido, getCuestionarioRapidoPorId, getCuestionarioRapidoPorClave, getCuestionarioRapidoPorIdProfesor, deleteCuestionarioRapidoPorId, updateJuegoCuestionarioRapido }
