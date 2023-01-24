@@ -64,6 +64,72 @@
       "profesorId": 16,
       "cuestionarioId": 59,
       "id": "d81a4211-d496-4f90-8cda-4f6d7ba1f285"
+    },
+    {
+      "NombreJuego": "Clasico",
+      "Tipo": "Juego De Cuestionario Rápido",
+      "Modalidad": "Clásico",
+      "Clave": "50034563",
+      "PuntuacionCorrecta": "1",
+      "PuntuacionIncorrecta": "1",
+      "Presentacion": "Preguntas desordenadas",
+      "JuegoActivo": false,
+      "JuegoTerminado": false,
+      "profesorId": 16,
+      "cuestionarioId": 59,
+      "TiempoLimite": 39,
+      "Respuestas": [
+        {
+          "nick": "lolo",
+          "respuestas": {
+            "Nota": "011",
+            "Tiempo": 21,
+            "Preguntas": [
+              276,
+              277
+            ],
+            "Respuestas": [
+              [
+                "carlos"
+              ],
+              [
+                "Blanco"
+              ]
+            ]
+          }
+        }
+      ],
+      "id": "994fbc4a-1734-4134-a846-7fd42052b909"
+    }
+  ],
+  "Pregunta": [
+    {
+      "Titulo": "twsrggr",
+      "Tipo": "Cuatro opciones",
+      "Pregunta": "Como te llamas?",
+      "Tematica": "sfsdfs",
+      "FeedbackCorrecto": "ninguno pringado",   
+      "FeedbackIncorrecto": "afdafasf",
+      "RespuestaCorrecta": "carlos",
+      "RespuestaIncorrecta1": "pepe",
+      "RespuestaIncorrecta2": "alberto",
+      "RespuestaIncorrecta3": "quique",
+      "Emparejamientos": [],
+      "profesorId": 16,
+      "id": 276
+    },
+    {
+      "Titulo": "APIV2",
+      "Tipo": "Respuesta abierta",
+      "Pregunta": "aaaaa",
+      "Tematica": "aaaa",
+      "Imagen": "image-1674427406959.jpg",
+      "FeedbackCorrecto": "aaaa",
+      "FeedbackIncorrecto": "aaaa",
+      "Emparejamientos": [],
+      "RespuestaCorrecta": "aaaaa",
+      "profesorId": 16,
+      "id": "a4fb8895-297e-48d3-9ca8-5632d2153607"
     }
   ],
   "JuegoEncuestaRapida": [

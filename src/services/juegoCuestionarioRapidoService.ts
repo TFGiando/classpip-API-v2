@@ -17,6 +17,15 @@ const getJuegoCuestionarioRapidoPorId = (id: string) => {
 
 }
 
+const getJuegoCuestionarioRapidoPorClave = (clave: string) => {
+    try {
+        const juegoCuestionario = juegoCuestionarioRapido.getCuestionarioRapidoPorClave(clave);
+        return juegoCuestionario;
+    } catch (error) {
+        throw error;
+    }
+}
+
 const getJuegoCuestionarioRapidoPorIdProfesor = (idProfesor: number) => {
     try {
         const juegoCuestionario = juegoCuestionarioRapido.getCuestionarioRapidoPorIdProfesor(idProfesor);
@@ -62,7 +71,7 @@ const deleteJuegoCuestionarioRapidoPorId = (id: string) => {
 
 const updateJuegoCuestionarioRapido = (updateJuegoCuestionario: JuegoCuestionarioRapido) => {
     try {
-        const juegoCuestionario = juegoCuestionarioRapido.updateJuegoCuestionarioRapido(updateJuegoCuestionario, updateJuegoCuestionario.id);//CAMBIAR
+        const juegoCuestionario = juegoCuestionarioRapido.updateJuegoCuestionarioRapido(updateJuegoCuestionario, updateJuegoCuestionario.id);
         return juegoCuestionario;
     } catch (error) {
         throw error;
@@ -73,6 +82,7 @@ export {
     getAllJuegoCuestionarioRapido,
     createJuegoCuestionarioRapido,
     getJuegoCuestionarioRapidoPorId,
+    getJuegoCuestionarioRapidoPorClave,
     getJuegoCuestionarioRapidoPorIdProfesor,
     deleteJuegoCuestionarioRapidoPorId,
     updateJuegoCuestionarioRapido
