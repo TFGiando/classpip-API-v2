@@ -3,7 +3,6 @@ import * as  profesorService from "../services/profesorService"
 
 const getProfesores = (req: Request, res: Response) => {
    const allProfesores = profesorService.getAllProfesores();
-   // console.log("Este es el request body: " + req.body);
    res.send({status: "OK", data: allProfesores});
 }
 
