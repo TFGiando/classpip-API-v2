@@ -25,6 +25,15 @@ const getJuegoCogerTurnoRapidoPorIdProfesor = (idProfesor: number) => {
     }
 }
 
+const getJuegoCogerTurnoRapidoPorClave = (clave: number) => {
+    try {
+        const juegoCogerTurno = juegoCogerTurnoRapido.getCogerTurnoPorClave(clave.toString());
+        return juegoCogerTurno;
+    } catch (error) {
+        throw error;
+    }
+}
+
 const createJuegoCogerTurnoRapido = (newJuegoCogerTurnoRapido: JuegoCogerTurnoRapido) => {
     
    if(!newJuegoCogerTurnoRapido.NombreJuego||
@@ -75,5 +84,6 @@ export {
     getJuegoCogerTurnoRapidoPorId,
     getJuegoCogerTurnoRapidoPorIdProfesor,
     deleteJuegoCogerTurnoRapidoPorId,
-    updateJuegoCogerTurnoRapido
+    updateJuegoCogerTurnoRapido,
+    getJuegoCogerTurnoRapidoPorClave
 }

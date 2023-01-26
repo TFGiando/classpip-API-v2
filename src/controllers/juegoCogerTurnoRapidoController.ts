@@ -1,8 +1,6 @@
 import { request, Request, Response } from "express";
 import * as juegoCogerTurnoRapidoService from "../services/juegoCogerTurnoRapidoService";
 import { handleHttp } from "../utils/http.handle";
-import {body , validationResult } from 'express-validator';
-
 
 const getAllJuegoCogerTurnoRapido = (req: Request, res: Response) => {
 try{
@@ -40,16 +38,26 @@ const getJuegoCogerTurnoRapidoPorProfesor = ({params}: Request, res:Response) =>
     }
 }
 
+const getJuegoCogerTurnoRapidoPorClave = ({params}: Request, res: Response) => {
+    const {clave} = params;
+    if(!clave) {
+        handleHttp(res, "Falta parametro :clave", 400);
+    } 
+    try {
+        const juegoCogerTurno = juegoCogerTurnoRapidoService.getJuegoCogerTurnoRapidoPorClave(+clave);
+        res.send(juegoCogerTurno)
+    } catch (error: any) {
+        handleHttp(res, error?.message ||"ERROR_GET_JUEGO_COGER_TURNO_RAPIDP_POR_CLAVE", error?.status || 500, error);
+    }
+}
+
 const createJuegoCogerTurnoRapido = (req: Request, res: Response) => {
     
     const {body} = req;
     
     try{
-        console.log("dentro del controller")
-
         const createdJuegoCogerTurnoRapido = juegoCogerTurnoRapidoService.createJuegoCogerTurnoRapido(body);
         res.status(201).send(createdJuegoCogerTurnoRapido)
-        console.log(res)
     } catch (error:any) {
         handleHttp(res, error?.message || "ERROR_CREATE_JUEGO_COGER_TURNO_RAPIDO", error?.status || 500, error);
     }
@@ -84,4 +92,4 @@ const deleteJuegoCogerTurnoRapido = ({params}: Request, res: Response) => {
 
 }
 
-export {getAllJuegoCogerTurnoRapido, getJuegoCogerTurnoRapidoPorId, getJuegoCogerTurnoRapidoPorProfesor, createJuegoCogerTurnoRapido, deleteJuegoCogerTurnoRapido, updateJuegoCogerTurnoRapido}
+export {getAllJuegoCogerTurnoRapido,getJuegoCogerTurnoRapidoPorClave, getJuegoCogerTurnoRapidoPorId, getJuegoCogerTurnoRapidoPorProfesor, createJuegoCogerTurnoRapido, deleteJuegoCogerTurnoRapido, updateJuegoCogerTurnoRapido}

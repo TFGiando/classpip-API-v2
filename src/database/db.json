@@ -354,6 +354,62 @@
         }
       ],
       "id": "9870a063-b4b6-4814-8cc4-fa4f63cacca7"
+    },
+    {
+      "NombreJuego": "rfdsfds",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 14,
+      "Clave": "64708397",
+      "Presentacion": "fsdfdsfsd",
+      "Turnos": [
+        {
+          "dia": "2023-01-26",
+          "hora": "22:17"
+        }
+      ],
+      "id": "5fe95465-87c4-4012-9ec7-3dba60c0cd43"
+    },
+    {
+      "NombreJuego": "Porfavor acabar ya ",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 14,
+      "Clave": "32490555",
+      "Presentacion": "Hola",
+      "Turnos": [
+        {
+          "dia": "2023-01-31",
+          "hora": "00:07"
+        }
+      ],
+      "id": "d439ff00-321b-444f-89ba-f5c05f679e47"
+    },
+    {
+      "NombreJuego": "fsdfsf",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 14,
+      "Clave": "58261689",
+      "Presentacion": "fsdfs",
+      "Turnos": [
+        {
+          "dia": "2023-01-31",
+          "hora": "23:11"
+        }
+      ],
+      "id": "2791f4c3-f863-4929-b595-d83ad29c25a2"
+    },
+    {
+      "NombreJuego": "fsdfsdfds",
+      "Tipo": "Juego De Coger Turno Rápido",
+      "profesorId": 14,
+      "Clave": "36934418",
+      "Presentacion": "fsdfdsfs",
+      "Turnos": [
+        {
+          "dia": "2023-01-31",
+          "hora": "00:12"
+        }
+      ],
+      "id": "db3543b2-0089-47ce-a172-4c20f4033284"
     }
   ]
 }

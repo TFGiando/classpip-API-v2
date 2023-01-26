@@ -9,7 +9,6 @@ const getProfesores = (req: Request, res: Response) => {
 
 const createProfesor = (req: Request, res: Response) => {
    const { body } = req;
-   console.log(body);
 
    if(!body.Nombre || 
       !body.PrimerApellido ||

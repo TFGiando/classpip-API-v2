@@ -22,6 +22,22 @@ const getCogerTurnoRapidoPorId = (id: string) => {
     }
 }
 
+const getCogerTurnoPorClave = (clave: string) => {
+    try {
+        const cogerTurnoRapido = DB.JuegoCogerTurnoRapido.find((juegoCogerTurno: JuegoCogerTurnoRapido)=> 
+        juegoCogerTurno.Clave === clave);
+    if(!cogerTurnoRapido) {
+        throw {
+            status: 400,
+            message: `No se puede encontrar el juegoCogerTurnoRapido con clave' ${clave}`
+        }
+    }
+    return cogerTurnoRapido;
+} catch(error: any){
+    throw{status: error?.status || 500, message: error?.message || error}
+}
+}
+
 const getCogerTurnoPorIdProfesor = (idProfesor: number) => {
     
     try {
@@ -41,24 +57,6 @@ const getCogerTurnoPorIdProfesor = (idProfesor: number) => {
 
 const createJuegoCogerTurnoRapido = (newJuegoRapido: JuegoCogerTurnoRapido) => {
     try {
-        console.log("apunto de subirse")
-        console.log(newJuegoRapido)
-        console.log("clave")
-        console.log(newJuegoRapido.Clave);
-        console.log("turnos")
-        console.log(newJuegoRapido.Turnos);
-        console.log("nombreJuego")
-        console.log(newJuegoRapido.NombreJuego);
-        console.log("Tipo")
-        console.log(newJuegoRapido.Tipo);
-        console.log("profsedorId")
-        console.log(newJuegoRapido.profesorId);
-        console.log("id")
-        console.log(newJuegoRapido.id);
-        console.log("presentacion")
-        console.log(newJuegoRapido.Presentacion);
-        console.log("DB")
-        console.log(DB.JuegoCogerTurnoRapido)
         DB.JuegoCogerTurnoRapido.push(newJuegoRapido);
         utils.saveToDatabase(DB);
         return newJuegoRapido;
@@ -111,4 +109,4 @@ const updateJuegoCogerTurnoRapido = (changesJuegoCogerTurnoRapido: JuegoCogerTur
     }
 }
 
-export { getAllCogerTurnoRapido, createJuegoCogerTurnoRapido, getCogerTurnoPorIdProfesor, getCogerTurnoRapidoPorId, deleteCogerTurnoRapidoPorId, updateJuegoCogerTurnoRapido }
+export { getAllCogerTurnoRapido, createJuegoCogerTurnoRapido, getCogerTurnoPorIdProfesor, getCogerTurnoRapidoPorId, deleteCogerTurnoRapidoPorId, getCogerTurnoPorClave, updateJuegoCogerTurnoRapido }
