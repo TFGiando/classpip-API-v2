@@ -15,5 +15,5 @@ jobs:
       run: | 
         echo "${{ secrets.DOCKERPW }}" | docker login -u tefegiando -p tefegiando
         docker image build -t tefegiando/apiv2:v1 .
-        docker push tefegiando/apiv2:V1
+        docker push tefegiando/apiv2
  
