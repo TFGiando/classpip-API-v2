@@ -14,6 +14,7 @@ jobs:
     - name: Build & Push Image
       run: | 
         echo "${{ secrets.DOCKERPW }}" | docker login -u tefegiando -p tefegiando
-        docker image build -t tefegiando/apiv2:v1 .
+        docker image build -t apiv2 .
+        docker tag apiv2 tefegiando/apiv2
         docker push tefegiando/apiv2
  
