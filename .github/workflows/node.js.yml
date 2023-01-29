@@ -27,3 +27,18 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
+    
+  if_merged: 
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build & Push Image
+      run: | 
+        echo "${{ secrets.DOCKERPW }}" | docker login -u "Tefegiando" --password-stdin
+        docker image build -t tefegiando/apiv2:v1 .
+        docker push apiv2 tefegiando/apiv2:V1
+
+    
+  
+    
