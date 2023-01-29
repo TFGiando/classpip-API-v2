@@ -6,6 +6,9 @@ const getProfesores = (req: Request, res: Response) => {
    res.send({status: "OK", data: allProfesores});
 }
 
+
+// Testin pipeline
+
 const createProfesor = (req: Request, res: Response) => {
    const { body } = req;
    console.log(body);
