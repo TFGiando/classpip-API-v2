@@ -2,6 +2,8 @@ import { Request, Response } from "express";
 import * as juegoEncuestaRapidaService from "../services/juegoEncuestaRapidaService";
 import { handleHttp } from "../utils/http.handle";
 
+
+// 
 const getAllJuegoEncuestaRapida = (req: Request, res: Response) => {
     try {
         const getAllJuegoEncuestaRapida = juegoEncuestaRapidaService.getAllJuegoEncuestaRapida();

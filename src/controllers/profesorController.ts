@@ -6,9 +6,11 @@ const getProfesores = (req: Request, res: Response) => {
    res.send({status: "OK", data: allProfesores});
 }
 
+
+// Testin pipeline
+
 const createProfesor = (req: Request, res: Response) => {
    const { body } = req;
-   console.log(body);
 
    if(!body.Nombre || 
       !body.PrimerApellido ||
@@ -28,7 +30,8 @@ const createProfesor = (req: Request, res: Response) => {
       NombreUsuario: body.NombreUsuario,
       email: body.email,
       Password: body.Password,
-      Identificador: body.Identificador
+      Identificador: body.Identificador,
+      configuracionEventos : body.configuracionEventos
    }
 
    const createdProfesor = profesorService.createProfesor(newProfesor);
