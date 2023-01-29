@@ -6,6 +6,7 @@ const router = Router();
 // http://localhost:3001/api/v2/juegoCuestionarioRapido
 router.get("/", juegoCuestionarioRapidoController.getAllJuegoCuestionarioRapido);
 router.get("/:id", juegoCuestionarioRapidoController.getJuegoCuestionarioRapidoPorId);
+router.get("/clave/:clave", juegoCuestionarioRapidoController.getJuegoCuestionarioRapidoPorClave);
 router.get("/profesor/:idProfesor", juegoCuestionarioRapidoController.getJuegoCuestionarioRapidoPorProfesor);
 router.post("/", juegoCuestionarioRapidoController.createJuegoCuestionarioRapido );
 router.delete("/:id", juegoCuestionarioRapidoController.deleteJuegoCuestionarioRapido);
