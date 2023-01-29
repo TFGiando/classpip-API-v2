@@ -26,6 +26,21 @@ const getJuegoCuestionarioRapidoPorId = ({params}: Request, res: Response) => {
    
 }
 
+const getJuegoCuestionarioRapidoPorClave = ({params}: Request, res: Response) => {
+    const {clave} = params;
+    if (!clave) {
+        handleHttp(res, "Falta parametro :id", 400);
+    }
+
+    try {
+        const juegoCuestionarioRapido = juegoCuestionarioRapidoService.getJuegoCuestionarioRapidoPorClave(clave);
+        res.send(juegoCuestionarioRapido);
+    } catch (error: any) {
+        handleHttp(res, error?.message || "ERROR_GET_JUEGO_CUESTIONARIO_RAPIDO", error?.status || 500, error);
+    }
+   
+}
+
 const getJuegoCuestionarioRapidoPorProfesor = ({params}: Request, res: Response) => {
     const { idProfesor } = params;
     if (!idProfesor) {
@@ -54,7 +69,7 @@ const createJuegoCuestionarioRapido= (req: Request, res: Response) => {
 
 const updateJuegoCuestionarioRapido = (req: Request, res: Response) => {
     const { body } = req;
-    if (!body) { //Cambiar esta condicion por una  mejor
+    if (!body) { 
         handleHttp(res, "Faltan parametros en el body", 400);
     }
 
@@ -82,4 +97,4 @@ const deleteJuegoCuestionarioRapido = ({params}: Request, res: Response) => {
     
 }
 
-export { getAllJuegoCuestionarioRapido, getJuegoCuestionarioRapidoPorId, getJuegoCuestionarioRapidoPorProfesor, createJuegoCuestionarioRapido, deleteJuegoCuestionarioRapido, updateJuegoCuestionarioRapido}
+export { getAllJuegoCuestionarioRapido, getJuegoCuestionarioRapidoPorId, getJuegoCuestionarioRapidoPorProfesor, createJuegoCuestionarioRapido, deleteJuegoCuestionarioRapido, updateJuegoCuestionarioRapido, getJuegoCuestionarioRapidoPorClave}
