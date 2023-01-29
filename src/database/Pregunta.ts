@@ -3,7 +3,6 @@ const DB = require("./db.json");
 import * as utils from "../utils/utilsDatabase";
 import { Pregunta } from '../interfaces/preguntaInterface';
 
-// test pipeline
 
 const getPreguntasPorIdProfesor = (idProfesor: number) => {
     try {
