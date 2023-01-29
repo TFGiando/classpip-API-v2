@@ -7,8 +7,6 @@ const getAllProfesores = () => {
 }
 
 const createProfesor = (newProfesor: any) => {
-    console.log("Este es el nuevo profesor");
-    console.log(newProfesor);
     const ProfesorToInsert = {
         ...newProfesor,
         id: uuidv4(),

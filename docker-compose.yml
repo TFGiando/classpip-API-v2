@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  apiv2:
+    image: tefegiando/apiv2
+    ports:
+    - "3001:3001"
+    container_name: apiv2
+    restart: always
+  apiv1: 
+    image: tefegiando/apiv1
+    ports: 
+    - "3000:3000"
+    container_name: apiv1
+    restart: always
+  server:
+    image: tefegiando/server
+    ports: 
+    - "8200:8200"
+    container_name: server
+    restart: always
+  # dashboard:
+  #   image: tefegiando/dashboard
+  #   ports: 
+  #   - "4200:4200"
+  #   container_name: dashboard
+  #   restart: always
+
+
