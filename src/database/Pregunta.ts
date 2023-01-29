@@ -3,7 +3,7 @@ const DB = require("./db.json");
 import * as utils from "../utils/utilsDatabase";
 import { Pregunta } from '../interfaces/preguntaInterface';
 
-
+// Prueba CI 
 
 const getPreguntasPorIdProfesor = (idProfesor: number) => {
     try {
