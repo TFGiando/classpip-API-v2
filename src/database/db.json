@@ -148,6 +148,145 @@
       ],
       "profesorId": 8,
       "cuestionarioSatisfaccionId": 33
+    },
+    {
+      "NombreJuego": "sssss",
+      "Tipo": "Juego De Encuesta Rápida",
+      "profesorId": 16,
+      "Clave": "93927934",
+      "cuestionarioSatisfaccionId": 47,
+      "Respuestas": [],
+      "id": "287cd635-5274-4853-8c3f-82bbf2f200e3"
+    },
+    {
+      "NombreJuego": "pruebafinal",
+      "Tipo": "Juego De Encuesta Rápida",
+      "profesorId": 16,
+      "Clave": "12238966",
+      "cuestionarioSatisfaccionId": 43,
+      "Respuestas": [
+        {
+          "contestado": false,
+          "alumnoId": 0,
+          "juegoDeCuestionarioSatisfaccionId": "994e5a80-36e3-45c8-bb87-cba30d283b2e",
+          "respuestasAfirmaciones": [
+            5,
+            4
+          ],
+          "respuestasPreguntasAbiertas": [
+            "aaaaa",
+            "mmmmm"
+          ]
+        }
+      ],
+      "id": "994e5a80-36e3-45c8-bb87-cba30d283b2e"
+    }
+  ],
+  "CuestionarioSatisfaccion": [
+    {
+      "id": 48,
+      "Titulo": "prueba api v3333",
+      "Descripcion": "prueb333a",
+      "Publico": true,
+      "Afirmaciones": [
+        "En es33te cu333rso esto",
+        "Estoy a333prendiendo bien"
+      ],
+      "PreguntasAbiertas": [
+        "Â¿CuÃ¡l ha 333sido la crÃ­tica mÃ¡s pos3333itiva?",
+        "Â¿CuÃ¡l ha 3333 la crÃ­tica mÃ3333¡s negativa?"
+      ],
+      "profesorId": 15
+    },
+    {
+      "id": 49,
+      "Titulo": "prueba apiiiiiiiiiiiii v2",
+      "Descripcion": "prueba",
+      "Publico": true,
+      "Afirmaciones": [
+        "En este curso estoy sufriendo",
+        "Estoy aprendiendo bien"
+      ],
+      "PreguntasAbiertas": [
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s positiva?",
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s negativa?"
+      ],
+      "profesorId": 16
+    },
+    {
+      "id": 50,
+      "Titulo": "prueba apiiiiiiiiiiiii v3",
+      "Descripcion": "prueba",
+      "Publico": false,
+      "Afirmaciones": [
+        "En este curso estoy sufriendo",
+        "Estoy aprendiendo bien"
+      ],
+      "PreguntasAbiertas": [
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s positiva?",
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s negativa?"
+      ],
+      "profesorId": 16
+    },
+    {
+      "id": 51,
+      "Titulo": "prueba apiiiiiiiiiiiii v4",
+      "Descripcion": "prueba",
+      "Publico": true,
+      "Afirmaciones": [
+        "En este curso estoy sufriendo",
+        "Estoy aprendiendo bien"
+      ],
+      "PreguntasAbiertas": [
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s positiva?",
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s negativa?"
+      ],
+      "profesorId": 16
+    },
+    {
+      "Titulo": "prueba apiiiiiiiiiiiii v23333444",
+      "Descripcion": "prueba",
+      "Afirmaciones": [
+        "En este curso estoy sufriendo",
+        "Estoy aprendiendo bien"
+      ],
+      "PreguntasAbiertas": [
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s positiva?",
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s negativa?"
+      ],
+      "profesorId": 17,
+      "Publico": false,
+      "id": 1000
+    },
+    {
+      "Titulo": "prueba apiiiiiiiiiiiii v2",
+      "Descripcion": "prueba",
+      "Afirmaciones": [
+        "En este curso estoy sufriendo",
+        "Estoy aprendiendo bien"
+      ],
+      "PreguntasAbiertas": [
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s positiva?",
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s negativa?"
+      ],
+      "profesorId": 16,
+      "Publico": false,
+      "id": 1000
+    },
+    {
+      "Titulo": "abcdefghj",
+      "Descripcion": "prueba2",
+      "Afirmaciones": [
+        "En este curso estoy guay",
+        "Estoy aprendiendo bien y mucho"
+      ],
+      "PreguntasAbiertas": [
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s positiva???",
+        "Â¿CuÃ¡l ha sido la crÃ­tica mÃ¡s negativa???"
+      ],
+      "profesorId": 16,
+      "id": 293174,
+      "Publico": true
     }
   ]
 }
