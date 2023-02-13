@@ -12,7 +12,6 @@ const getAllJuegoCuestionarioRapido = (req: Request, res: Response) => {
 }
 
 
-// demo
 const getJuegoCuestionarioRapidoPorId = ({params}: Request, res: Response) => {
     const {id} = params;
     if (!id) {
