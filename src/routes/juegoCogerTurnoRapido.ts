@@ -11,5 +11,6 @@ router.get("/clave/:Clave", juegoCogerTurnoRapidoController.getJuegoCogerTurnoRa
 router.post("/", juegoCogerTurnoRapidoController.createJuegoCogerTurnoRapido);
 router.delete("/:id", juegoCogerTurnoRapidoController.deleteJuegoCogerTurnoRapido);
 router.put("/", juegoCogerTurnoRapidoController.updateJuegoCogerTurnoRapido);
+router.get("/prueba/video", juegoCogerTurnoRapidoController.pruebaVideo);
 
 export{router}
