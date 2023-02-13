@@ -1,7 +1,7 @@
 import * as juegoCuestionarioRapido from "../database/JuegoCuestionarioRapido"
 import * as preguntaPersistence from "../database/Pregunta"
 import { v4 as uuidv4 } from 'uuid';
-import { JuegoCuestionarioRapido } from "../interfaces/juegoCuestionarioRapidoInterface";
+import { JuegoCuestionarioRapido } from "../interfaces/juegosRapidos/juegoCuestionarioRapidoInterface";
 import { Pregunta } from "../interfaces/preguntaInterface";
 import * as fs from "fs";
 

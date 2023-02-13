@@ -25,6 +25,10 @@ const getJuegoCogerTurnoRapidoPorId = ({params}: Request, res: Response ) => {
     }
 }
 
+const pruebaVideo = ({params}:Request, res:Response ) => {
+    res.send("Tefegiando")
+}
+
 const getJuegoCogerTurnoRapidoPorProfesor = ({params}: Request, res:Response) => {
     const {idProfesor} = params;
     if(!idProfesor) {
@@ -92,4 +96,4 @@ const deleteJuegoCogerTurnoRapido = ({params}: Request, res: Response) => {
 
 }
 
-export {getAllJuegoCogerTurnoRapido,getJuegoCogerTurnoRapidoPorClave, getJuegoCogerTurnoRapidoPorId, getJuegoCogerTurnoRapidoPorProfesor, createJuegoCogerTurnoRapido, deleteJuegoCogerTurnoRapido, updateJuegoCogerTurnoRapido}
+export {getAllJuegoCogerTurnoRapido,getJuegoCogerTurnoRapidoPorClave, getJuegoCogerTurnoRapidoPorId, getJuegoCogerTurnoRapidoPorProfesor, createJuegoCogerTurnoRapido, deleteJuegoCogerTurnoRapido, updateJuegoCogerTurnoRapido, pruebaVideo}

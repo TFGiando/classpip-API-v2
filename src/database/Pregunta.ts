@@ -1,4 +1,4 @@
-import { JuegoCuestionarioRapido } from './../interfaces/juegoCuestionarioRapidoInterface';
+import { JuegoCuestionarioRapido } from './../interfaces/juegosRapidos/juegoCuestionarioRapidoInterface';
 const DB = require("./db.json");
 import * as utils from "../utils/utilsDatabase";
 import { Pregunta } from '../interfaces/preguntaInterface';
